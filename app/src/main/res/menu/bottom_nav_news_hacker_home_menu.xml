@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/top_stories"
+      android:icon="@drawable/ic_baseline_airline_stops_24"
+      android:id="@+id/topStoriesFragment"/>
+    <item android:title="@string/best_stories"
+      android:icon="@drawable/ic_baseline_dashboard_24"
+      android:id="@+id/BestStoriesFragment"/>
+    <item android:title="@string/comments"
+      android:icon="@drawable/ic_baseline_notifications_24"
+      android:id="@+id/NewStoriesFragment"/>
+</menu>
