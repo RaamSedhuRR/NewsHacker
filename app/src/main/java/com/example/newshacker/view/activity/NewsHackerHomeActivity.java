@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.newshacker.R;
 import com.example.newshacker.databinding.ActivityNewsHackerHomeBinding;
@@ -17,10 +18,13 @@ import com.example.newshacker.view.fragment.BestStoriesFragment;
 import com.example.newshacker.view.fragment.NewStoriesFragment;
 import com.example.newshacker.view.fragment.TopStoriesFragment;
 
+import javax.inject.Inject;
+
 public class NewsHackerHomeActivity extends AppCompatActivity {
 
 
     ActivityNewsHackerHomeBinding binding;
+
 
     @SuppressLint("NonConstantResourceId")
     @Override

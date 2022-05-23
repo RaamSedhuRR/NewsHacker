@@ -28,26 +28,32 @@ public class TopStoriesFragment extends Fragment {
 
     NewsHackerTextRecyclerAdapter adapter;
 
-
     List<Article> newsHackerTextList;
 
 
     NewsHackerViewModel viewModel = new NewsHackerViewModel();
 
+
     @Override
-    public void onAttach (@NonNull Context context) {
+    public void onAttach (@NonNull Context context ) {
         super.onAttach(context);
         this.context = context;
     }
 
     @Override
     public void onCreate (Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);    }
+        super.onCreate(savedInstanceState);
+    }
+
+
 
     @Override
     public View onCreateView (@NonNull LayoutInflater inflater,ViewGroup container
             ,Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
         binding = FragmentTopStoriesBinding.inflate(getLayoutInflater());
 
         viewModel.getTopArticlesDataSet().observe(getViewLifecycleOwner(),articles -> {
@@ -62,7 +68,6 @@ public class TopStoriesFragment extends Fragment {
                         (new LinearLayoutManager(context));
 
             binding.recyclerViewTopStories.setAdapter(adapter);
-
         });
 
 
